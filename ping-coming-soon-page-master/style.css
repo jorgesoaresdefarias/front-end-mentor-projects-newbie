@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+    --fontSize: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.wrapper .logo {
+    margin-top: 30%;
+    max-width: 20%;
+}
+
+.wrapper .title {
+    margin-top: 10%;
+    color: var(--veryDarkBlue);
+}
+
+.wrapper .title span {
+    color: var(--gray);
+    font-weight: 300;
+}
+
+.wrapper .subtitle {
+    font-size: .6rem;
+    margin-top: 5%;
+    color: hsl(0, 0%, 42%);;
+    font-weight: 600;
+}
+
+.wrapper form input {
+    padding-left: 10%;
+    margin-top: 10%;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid hsl(223, 36%, 64%);
+    height: 5.5vh;
+    width: 90%;
+}
+.wrapper form .error-text {
+    text-align: left;
+    margin-top: 1%;
+    font-size: .5rem;
+    color: var(--lightRed);
+    display: none;
+}
+
+.wrapper form.error input {
+    border: 1px solid var(--lightRed);
+}
+
+.wrapper form.error .error-text {
+    display: block;
+}
+
+.wrapper form input::placeholder {
+    font-size: .7rem;
+    color: hsl(223, 36%, 64%);
+    margin-left: 10%;
+}
+
+.wrapper form button {
+    cursor: pointer;
+    margin-top: 3%;
+    height: 5.5vh;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+.wrapper .dashboard {
+    margin-top: 20%;
+    max-width: 100%;
+}
+
+.wrapper .social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .social .facebook, 
+.wrapper .social .twitter, 
+.wrapper .social .instagram {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 100px;
+    border: 1px solid var(--paleBlue);
+    margin-left: 5%;
+}
+
+.wrapper .social .facebook img{
+    max-width: 3vh;
+    border-radius: 100px;
+    margin-top: 20%;
+}
+
+.wrapper .social .twitter img{
+    max-width: 3vh;
+    margin-top: 30%;
+}
+
+.wrapper .social .instagram img{
+    max-width: 3vh;
+    margin-top: 20%;
+}
+
+footer .copyright {
+    font-size: 11px;
+    color: var(--gray);
+    margin: 10%;
+}
+
+@media only screen and (min-width: 1000px){
+    .wrapper .logo {
+        margin-top: 10%;
+    }
+    .wrapper .title {
+        margin-top: 5%;
+    }
+    .wrapper .subtitle {
+        margin-top: 2%;
+    }
+    .wrapper form { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper form input {
+        width: 30%;
+        margin-top: 3%;
+        margin-right: 1%;
+        padding-left: 3%;
+    }
+    .wrapper form button {
+        width: 15%;
+    }
+    .wrapper .dashboard {
+        margin-top: 5%;
+        max-width: 50%;
+    }
+    .wrapper .social{
+        margin-top: 5%;
+    }
+    footer .copyright{
+        margin: 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .wrapper .social .facebook{
+        margin-left: 0;
+    }
+    .wrapper form .error-text{
+        position: absolute;
+        top: 46%;
+        left: 30%;
+    }
+}

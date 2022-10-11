@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --fontSize: 15px
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: var(--fontSize);
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    display: grid;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    background: 
+    url(./images/bg-pattern-top-desktop.svg) top left no-repeat,
+    url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+}
+
+.wrapper {
+    margin-top: 5%;
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 500px 3fr;
+}
+
+.wrapper__text {
+    width: 85%;
+}
+
+.text_title {
+    font-weight: bold;
+    color: var(--veryDarkMagenta);
+    font-size: 40px;
+}
+
+.text_desc {
+    color: var(--darkGrayishMagenta);
+    font-weight: bold;
+}
+
+
+.wrapper__rate {
+    margin-left: 20px;
+    display: grid;
+}
+
+.rate_card {
+    background: var(--lightGrayishMagenta);
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-radius: 7px;
+    height: 55px;
+    width: 500px;
+}
+
+.rate_stars {
+    margin: 20px;
+}
+
+.rate_text {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: var(--veryDarkMagenta);
+    font-weight: bold;
+}
+
+.report {
+    margin-left: 50px;
+}
+
+.bestTech {
+    margin-left: 100px;
+}
+
+.wrapper__card {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 385px 385px 385px;
+}
+
+.card {
+    background: var(--veryDarkMagenta);
+    border-radius: 10px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: 100px 150px;
+    grid-template-rows: 130px 130px;
+    margin-bottom: 50px;
+}
+
+.icon {
+    border-radius: 100px;
+    width: 50%;
+    margin: 50px;
+}
+
+.titles {
+    margin-left: 20px;
+    display: grid;
+    grid-template-rows: 65px 65px;
+}
+
+.card_title {
+    margin-top: 60px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.sub_title {
+    font-weight: 400;
+    display: block;
+    opacity: 80%;
+    color: var(--softPink);
+}
+
+.desc {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px !important;
+    color: var(--white);
+}
+
+.irene {
+    margin-top: 50px;
+}
+
+.anne {
+    margin-top: 100px;
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);   
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--violet);    
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center
+}
+
+.wrapper {
+    margin: 10%;
+    max-width: 90%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center
+}
+
+.logo {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    max-width: 20vh;
+}
+
+.wrapper .mockups {
+    margin-top: 10%;
+    max-width: 90%;
+}
+
+.wrapper .title {
+    margin-top: 10%;
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.wrapper .description {
+    margin-top: 8%;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    opacity: 0.8;
+}
+
+.wrapper form button {
+    border: none;
+    margin-top: 8%;
+    width: 70%;
+    height: 6vh;
+    border-radius: 50px;
+    color: var(--violet);
+    box-shadow: 5px 5px 22px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.wrapper form.error button {
+    background-color: var(--softMagenta);
+    color: white;
+}
+
+.social {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.fa {
+    padding: 2%;
+    font-size: .8rem;
+    width: 2vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.fa-facebook {
+    border: 1px solid white;
+    color: white;
+}
+
+.fa-twitter {
+    border: 1px solid white;
+    color: white;
+}
+
+.fa-instagram {
+    border: 1px solid white;
+    color: white;
+}
+
+@media only screen and (min-width: 1000px){
+    body {
+        background-image: url(./images/bg-desktop.svg);
+    }
+    .logo {
+        max-width: 30vh;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    .wrapper .mockups {
+        margin-top: 0;
+        max-width: 60%;
+    }
+    .wrapper .title {
+        margin-top: 0;
+        margin-left: 10%;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .wrapper .description {
+        margin-left: 10%;
+        min-width: 100%;
+    }
+    .wrapper form button {
+        margin-left: 10%;
+        width: 30%;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        position: absolute;
+        left: 80%;
+        top: 90%;
+    }
+    .fa {
+        padding: 15px;
+        width: 15px;
+        margin-right: 8%;
+    }
+}
